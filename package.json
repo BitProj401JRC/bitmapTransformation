@@ -1,0 +1,29 @@
+{
+  "name": "bitmap_transformation",
+  "version": "1.0.0",
+  "description": "Bitmap Transformer",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robgmerrill/bitmapTransformation.git"
+  },
+  "keywords": [
+    "bitmap",
+    "transformer",
+    "mocha",
+    "chai",
+    "fs"
+  ],
+  "author": "Jason Cameron Rob",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robgmerrill/bitmapTransformation/issues"
+  },
+  "homepage": "https://github.com/robgmerrill/bitmapTransformation#readme"
+}
