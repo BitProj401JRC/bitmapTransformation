@@ -6,14 +6,14 @@ const gulp = require('gulp'),
 gulp.task('lint', function() {
   return gulp.src(files)
     .pipe(eslint({
-      extends: 'eslint:recommended',
+      extends: 'eslint:recommended', // imports general rules
       ecmaFeatures: {
-        'modules': true,
-        'blockBindings': true
+        'modules': true,       // allows modules
+        'blockBindings': true  // allows const
       },
       'rules': {
-        'no-console': 0,
-        'semi': 2,
+        'no-console': 0,       // allows console.logs without throwing err
+        'semi': 2,             // requires semi-colons
       },
       envs: [
         'node',
@@ -32,4 +32,4 @@ gulp.task('watch', function() {
   gulp.watch(files, ['lint']);
 });
 
-gulp.task('default', ['mocha', 'lint']);
+gulp.task('default', ['mocha', 'lint', 'watch']);
